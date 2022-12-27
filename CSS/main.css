@@ -76,6 +76,24 @@ nav a.split:hover {
   color: black;
 }
 
+.dark-mode {
+  background-color: rgb(59, 59, 59);
+  color: rgb(226, 226, 226);
+}
+
+.lightBulb {
+  width:45px;
+  margin-right:10px;
+}
+
+.lightBulb:hover svg {
+  -webkit-transform:scale(1.25); /* Safari et Chrome */
+  -moz-transform:scale(1.25); /* Firefox */
+  -ms-transform:scale(1.25); /* Internet Explorer 9 */
+  -o-transform:scale(1.25); /* Opera */
+  transform:scale(1.25);
+}
+
 /* index */
 @keyframes tonext {
   75% {
@@ -135,24 +153,6 @@ nav a.split:hover {
 *::-webkit-scrollbar {
   width: 0;
 }
-
-/* * {
-  scrollbar-color: transparent transparent;
-  scrollbar-width: 0px;
-}
-  
-*::-webkit-scrollbar-track {
-  background: transparent;
-}
-  
-*::-webkit-scrollbar-thumb {
-  background: transparent;
-  border: none;
-}
-  
-* {
-  -ms-overflow-style: none;
-} */
   
 ol, li {
   list-style: none;
@@ -475,3 +475,4 @@ span {
       height: 200px;
     }
   }
+
