@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
   <meta charset='utf-8'>
   <title>Spyro the dragon</title>
@@ -21,10 +21,14 @@
     <h1>N'hésitez pas à nous contacter, <br> Sparx et Spyro se feront un plaisir de vous répondre !</h1>
     <form class="form">
       <h2>Pour Spyro :</h2>
-      <p type="Nom :"><input placeholder="Tapez votre nom ici."></input></p>
-      <p type="Prénom :"><input placeholder="Tapez votre prénom ici."></input></p>
-      <p type="Email :"><input placeholder="Laissez votre mail, Sparx vous recontactera."></input></p>
-      <p type="Message :"><br><textarea placeholder="Que souhaitez-vous dire à Spyro ?"></textarea></p>
+      <label for="name">Nom :</label>
+      <input name="name" id="name" placeholder="Tapez votre nom ici.">
+      <label for="firstName">Prénom :</label>
+      <input name="firstName" id="firstName" placeholder="Tapez votre prénom ici.">
+      <label for="email">Email :</label>
+      <input name="email" id="email" placeholder="Laissez votre mail, Sparx vous recontactera.">
+      <label for="message">Message :</label>
+      <textarea name="message" id="message" placeholder="Que souhaitez-vous dire à Spyro ?"></textarea>
       <button>Envoyer</button>
     </form>
   </main>

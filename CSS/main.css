@@ -8,6 +8,7 @@ main {
 #formMain {
   padding-top: 3%;
   padding-bottom: 3%;
+  flex-direction: column;
 }
 
 h1 {
@@ -81,17 +82,30 @@ nav a.split:hover {
   color: rgb(226, 226, 226);
 }
 
+nav li:last-child {
+  margin-right:10px;
+}
+
 .lightBulb {
   width:45px;
   margin-right:10px;
 }
 
-.colorPicker {
-  width:45px;
-  margin-right:0;
+.pcr-button {
+  width: 20px!important;
+  height:20px!important;
+  margin-left:5px;
+  margin-top: 2px;
 }
 
-.lightBulb:hover svg, .colorPicker:hover {
+.colorPicker {
+  width:70px;
+  margin-right:0;
+  margin-left:5px;
+  display: flex;
+}
+
+.lightBulb:hover svg {
   -webkit-transform:scale(1.25); /* Safari et Chrome */
   -moz-transform:scale(1.25); /* Firefox */
   -ms-transform:scale(1.25); /* Internet Explorer 9 */
@@ -383,12 +397,15 @@ input:focus {
   border-bottom:2px solid #69067a;
 }
 
-.form p:before {
-  content:attr(type);
+.form label {
   display:block;
   margin:28px 0 0;
   font-size:14px;
   color:#69067a;
+}
+
+.form textarea {
+  margin-top: 5px;
 }
 
 button {
@@ -402,6 +419,10 @@ button {
   color:#69067a;
   cursor:pointer;
   transition:all .3s;
+}
+
+.form button {
+  margin-top: 20px;
 }
 
 button:hover {
